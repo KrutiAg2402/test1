@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Styler - Kruti Y Agarwal</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<div id="container">
+	<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+</p>
+</div>
+
+<div id="second">
+	<div id="familydiv">
+		<label for="select" id="familylabel">Font Family: </label>
+		<select id="select" onchange="myfunction(this)">		<!-- to create drop down menu -->
+		<option>Georgia</option>
+  		<option>Palatino Linotype</option>
+  		<option>Book Antiqua</option>
+  		<option>Times New Roman</option>
+  		<option>Arial</option>
+  		<option>Helvetica</option>
+  		<option>Arial Black</option>
+  		<option>Impact</option>
+ 		 <option>Lucida Sans Unicode</option>
+  		<option>Tahoma</option>
+  		<option>Verdana</option>
+  		<option>Courier New</option>
+  		<option>Lucida Console</option>
+	
+</select>
+	</div>
+
+
+<div class="third" onchange="mycolor()">
+ Color Picker : <input type="color" id="colorpick" value="#6a5acd">
+	Hex Code: <input type="text" id="box">
+</div>
+
+<div class="size">
+	<input type="range" min="0" max="40" id="slider"
+            onchange="changeSizeBySlider()" value="20" />
+</div>
+
+</div>
+
+
+</body>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
